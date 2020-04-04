@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/app/App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-    <h1>Wellcome Shwitter</h1>,
-    document.getElementById('root')
-  );
+class Layout extends React.Component {
+  render() {
+    return (
+      <div>
+        <App></App>
+        <h1>index works</h1>
+      </div>
+    )
+  }
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+const root = document.getElementById("root");
+
+ReactDOM.render(<Layout/>, root);
+
 serviceWorker.unregister();
