@@ -1,4 +1,7 @@
-.css-class-test {
-    background-color: #000;
-    color: #fff;
+.App {
+    height: 100%;
+}
+
+.sign-in-up-link {
+    color: lightskyblue;
 }

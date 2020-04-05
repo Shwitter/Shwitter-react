@@ -7,10 +7,7 @@ import * as serviceWorker from './serviceWorker';
 class Layout extends React.Component {
   render() {
     return (
-      <div>
         <App></App>
-        <h1>index works</h1>
-      </div>
     )
   }
 }
