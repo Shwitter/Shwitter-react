@@ -15,3 +15,7 @@ code {
 #root {
   height: 100%;
 }
+
+body.swal2-height-auto {
+  height: 100% !important; /* need to find a better solution for this */
+}
