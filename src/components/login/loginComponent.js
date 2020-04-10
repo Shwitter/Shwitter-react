@@ -23,7 +23,7 @@ class LoginComponent extends React.Component {
     }
 
     logInUser() {
-        Axios.post('login', {
+        Axios.post('/login', {
             username: this.state.username,
             password: this.state.password
         }).then(result => {
